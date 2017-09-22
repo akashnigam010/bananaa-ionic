@@ -32,4 +32,8 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
+  skipLogin() {
+    alert('skipping login');
+  }
+
 }

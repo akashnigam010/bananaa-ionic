@@ -30,6 +30,23 @@
 	src: url('../assets/fonts/bna-simpson-font.ttf')format('truetype');
 };
 
+.google-ico{
+    display:block;
+    height:30px;
+    color:white;
+    text-decoration:none;
+    padding-left:20px;
+}
+.google-ico:before{
+    content: '';
+    background:url("../assets/images/logo-google.png");
+    background-size:cover;
+    position:absolute;
+    width:30px;
+    height:30px;
+    margin-left:-30px;
+}
+
 .light {
 	color: #939393;
 }

@@ -2,22 +2,22 @@
 	
 	<div class="container">
 		<div class="logo-container">
-			<img class="logo-img" src="../../assets/images/logo.png">
+			<img class="logo-img" src="assets/images/logo.png">
 		</div>
 		<button ion-button icon-left class="social-btn-fb" (click)="fbLogin()">
 		  <ion-icon name="logo-facebook"></ion-icon>
 		  Continue with Facebook 
 		</button>
 		<button ion-button icon-left class="social-btn-google" (click)="googleLogin()">
-		  <i class="ico"></i>
+		  <i class="google-ico"></i>
 		  Continue with Google	  
 		</button>	
 		<div class="light link-text" padding>
 			<div class="float-left">
-				<small>Signup/Login using email</small>
+				<!-- <small>Login using email</small> -->
 			</div>
-			<div class="float-right">
-				<small>Skip for now</small>
+			<div class="float-right" (click)="skipLogin()">
+				<small >Skip for now</small>
 			</div>
 		</div>
 	</div>
