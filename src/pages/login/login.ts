@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
 import { GooglePlus } from '@ionic-native/google-plus';
+import { Storage } from '@ionic/storage';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -11,7 +12,8 @@ import { GooglePlus } from '@ionic-native/google-plus';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private fb: Facebook, private googlePlus: GooglePlus) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private fb: Facebook, 
+    private googlePlus: GooglePlus, private storage: Storage) {
   }
 
   fbLogin() {
@@ -19,7 +21,7 @@ export class LoginPage {
 	  .then((res: FacebookLoginResponse) => {
 	  	alert('Logged into Facebookss!' + res.status)
 	  })
-	  .catch(e => console.log('Error logging into Facebook' + e));
+	  .catch(e => alert('Error logging into Facebook' + e));
   }
 
   googleLogin() {
@@ -33,7 +35,7 @@ export class LoginPage {
   }
 
   skipLogin() {
-    alert('skipping login');
+    this.storage.set('isSkippedLogin', 'true');
+    this.navCtrl.setRoot(HomePage)
   }
-
 }
