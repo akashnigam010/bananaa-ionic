@@ -13,7 +13,7 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = this.getFirstPage();
 
   pages: Array<{title: string, component: any}>;
 
@@ -26,6 +26,10 @@ export class MyApp {
       { title: 'List', component: ListPage }
     ];
 
+  }
+
+  getFirstPage() {
+    return LoginPage;
   }
 
   initializeApp() {

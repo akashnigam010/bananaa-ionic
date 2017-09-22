@@ -86,3 +86,16 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+// @font-face {
+// 	font-family: bna-web;
+// 	src: url('../assets/fonts/bna-web-regular.ttf')format('truetype');
+// };
+
+// .light {
+// 	font-family: bna-web;
+// }
+
+$font-family-md-base: bna-web;
+$font-family-ios-base: bna-web;
+$font-family-wp-base: bna-web;

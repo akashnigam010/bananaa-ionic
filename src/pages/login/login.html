@@ -1,4 +1,25 @@
 <ion-content padding>
-	<h3>Login to Bananaa</h3>
 	
+	<div class="container">
+		<div class="logo-container">
+			<img class="logo-img" src="../../assets/images/logo.png">
+		</div>
+		<button ion-button icon-left class="social-btn-fb" (click)="fbLogin()">
+		  <ion-icon name="logo-facebook"></ion-icon>
+		  Continue with Facebook	  
+		</button>
+		<button ion-button icon-left class="social-btn-google" (click)="fbLogin()">
+		  <i class="ico"></i>
+		  Continue with Google	  
+		</button>	
+		<div class="light link-text" padding>
+			<div class="float-left">
+				<small>Signup/Login using email</small>
+			</div>
+			<div class="float-right">
+				<small>Skip for now</small>
+			</div>
+		</div>
+		
+	</div>	
 </ion-content>
