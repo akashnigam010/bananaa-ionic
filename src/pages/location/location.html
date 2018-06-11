@@ -1,0 +1,17 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Location</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<p class="light">Popular Locations</p>
+	<ion-list class="locations-container">
+		<div ion-item *ngFor="let location of locations" (click)="setLocation(location)">
+			{{location.name}}
+		</div>
+	</ion-list>
+
+</ion-content>

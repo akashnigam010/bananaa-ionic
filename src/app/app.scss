@@ -14,3 +14,56 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// Custom Global CSS
+
+@font-face {
+	font-family: bna-web;
+	src: url('../assets/fonts/bna-web-regular.ttf')format('truetype');
+};
+@font-face {
+	font-family: bna-simpson;
+	src: url('../assets/fonts/bna-simpson-font.ttf')format('truetype');
+};
+
+.google-ico{
+    display:block;
+    height:30px;
+    color:white;
+    text-decoration:none;
+    padding-left:20px;
+}
+.google-ico:before{
+    content: '';
+    background:url("../assets/images/logo-google.png");
+    background-size:cover;
+    position:absolute;
+    width:30px;
+    height:30px;
+    margin-left:-30px;
+}
+.home-banner {
+    background: linear-gradient(
+                 rgba(20,20,20, 0.0), 
+                 rgba(20,20,20, 0.3)),
+                 url("../assets/images/home-bg.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    height: 400px;
+}
+
+.light {
+	color: #939393;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+.bna-color {
+	color: #9932CC;
+}

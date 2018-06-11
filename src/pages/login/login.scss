@@ -1,0 +1,32 @@
+page-login {
+	.container {
+		text-align: center;
+	}
+	.logo-container {
+		padding: 45% 5%;
+	}
+	.logo-img {
+		width: 30%;
+	}
+	.button-container {
+		width: 80%;
+	}
+	.social-btn-fb {
+		text-transform: none;
+		background-color: #3b5998;
+		width: 90%;
+	    height: 4.2rem;
+		margin: 2%;
+	}
+	.social-btn-google {
+		text-transform: none;
+		background-color: #fff; 
+		color: #000;
+		width: 90%;
+		height: 4.2rem;
+		margin: 2%;
+	}
+	.link-text {
+		text-transform: uppercase;
+	}
+}
